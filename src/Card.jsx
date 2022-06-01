@@ -1,0 +1,17 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+const Card =(props)=>{
+    return(
+        <>
+            <div className="card col-0 col-md-12 col-lg-3 m-3 p-0  margin w-30">
+                <img src={props.img} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                    <h5 className="card-title">{props.title}</h5>
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <NavLink to="/services" className="btn btn-primary">Check Now</NavLink>
+                </div>
+            </div>
+        </>
+    )
+}
+export default Card;
